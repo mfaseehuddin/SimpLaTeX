@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161B1E;
+    color: #FFFFFF;
+}
+
+.appContainer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.FormSimp {
+    display: flex;
+    justify-content: center;
+}
+
+.MagicButton {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all linear 0.2s;
+}
+
+.MagicButton:focus {
+    outline: none;
+}
+
+.MagicButton:active {
+    transform: scale(0.98);
+}
+
+.MagicButton:hover {
+
+    background-color: #01B17F;
+}
+
+.MagicButton-block {
+    display: block;
+    width: 100%;
+}
+
+.hidden-alert {
+    transition: all linear 0.3s;
+    margin-top: 10px;
+    padding: 1em;
+    text-align: center;
+    background-color: #161B1E;
+    border-radius: 5px;
+    user-select: none;
+    color: #01FDB5;
+}
+
+.latexContainer {
+    padding: 1em;
+    text-align: center;
+    background-color: #5C5F62;
+    border-radius: 5px;
+    user-select: none;
+    transition: all linear 0.2s;
+}
+.latexContainer:hover{
+    background-color: #01B17F
+}
+.latexContainer:active{
+    transform: scale(0.98);
+}
+
+.add-form {
+    margin-bottom: 40px;
+}
+
+.FormSimp {
+    margin: 20px 0;
+}
+
+.FormSimp label {
+    display: block;
+}
+
+.FormSimp input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+}
+
+.FormSimp-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FormSimp-check label {
+    flex: 1;
+}
+
+.FormSimp-check input {
+    flex: 2;
+    height: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    .main{
+        transform: scale(0.9);
+    }
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .main{
+        transform: scale(1.1);
+    }
+  }
+  
